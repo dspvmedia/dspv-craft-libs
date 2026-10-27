@@ -1,0 +1,8 @@
+{
+  "allowlist_paths": [
+    {
+      "path": "crates/ai-core/src/draft.rs",
+      "reason": "Endpoint presets for the bring-your-own-key 'add a connection' form (address strings only; the file does no I/O). The key is the user's and the provider bills the user, not DSPV. No DSPV app depends on craft-ai-core yet; if a DSPV-owned key is ever wired to it, meter that call."
+    }
+  ]
+}
