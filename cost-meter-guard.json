@@ -1,0 +1,9 @@
+{
+  "about": "Settings for DSPV's cost-meter guard (automation/cost-meter-guard in dspvmedia/dspv-ai-creation-suite), run on this repository with --root by the monorepo's fork CI. Every paid call must be metered; these paths are skipped, each for the reason given. This file lives only on DSPV's line, so upstream syncs never touch it.",
+  "allowlist_paths": [
+    {
+      "path": "crates/ai-core/src/draft.rs",
+      "reason": "the add-a-connection form's preset table: provider addresses as text a person picks from, never a request. The module does no I/O (it compiles for wasm) and craft-ai-core has no HTTP client dependency; the app that sends a request with a saved connection is the one that meters it"
+    }
+  ]
+}
